@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catálogo de Produtos</title>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Produtos</h1>
+    </header>
+    <main>
+        <form id="ordenar-form">
+            <label for="ordenar"> Ordenar Por:</label>
+            <select name="ordenar" id="ordenar">
+                <option value="rating">Avaliações</option>
+                <option value="preco-menor">Preço menor ao maior</option>
+                <option value="preco-maior">Preço maior ao menor</option>
+            </select>
+            <button>Ordenar</button>
+        </form>
+        <ul id="prod-list"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
